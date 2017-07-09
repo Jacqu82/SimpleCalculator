@@ -36,7 +36,7 @@ class Calculator
             $result = $num1 / $num2;
             return $result;
         } else {
-            die("<b>Nie dzielimy przez 0!!!</b><br/><br/>");
+            die("<b>Pamiętaj cholero! Nigdy nie dziel przez 0!!!</b>");
         }
     }
 }
