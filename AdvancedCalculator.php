@@ -25,7 +25,7 @@ class AdvancedCalculator extends Calculator
 
     public function percent($num1, $num2)
     {
-        $result = $num1 * $num2/100;
+        $result = $num1 * $num2 / 100;
         return $result;
     }
 }
