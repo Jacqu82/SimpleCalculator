@@ -30,10 +30,11 @@ require_once "AdvancedCalculator.php";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['num1']) && isset($_POST['num2'])) {
         $operation = $_POST['operation'];
-        $num1 = (intval($_POST['num1']));
-        $num2 = (intval($_POST['num2']));
+        $num1 = (float)($_POST['num1']);
+        $num2 = (float)($_POST['num2']);
 
         $calculator = new AdvancedCalculator();
+
 
         if ($operation == '+') {
             echo "<h1>" . $num1 . " + " . $num2 . " wynosi: " . $calculator->add($num1, $num2) . "</h1>";
@@ -60,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <a href="index.php"><h2>Konwersja liczb</h2></a>
 <form method="post" action="#">
     <label>Wprowadź liczbę: <br/><input type="text" name="num"/></label><br/>
-    <label><input type="radio" name="radio" value="decbin">dec->bin</label><br/>
+    <label><input type="radio" name="radio" value="decbin" checked>dec->bin</label><br/>
     <label><input type="radio" name="radio" value="bindec">bin->dec</label><br/>
     <label><input type="radio" name="radio" value="dechex">dec->hex</label><br/>
     <label><input type="radio" name="radio" value="hexdec">hex->dec</label><br/>
