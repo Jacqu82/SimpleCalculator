@@ -4,18 +4,22 @@ body {
     background-size: cover;
     color: crimson;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+span {
+    font-size: 25px;
 }
 
 a {
     text-decoration: none;
-    color: white;
     text-shadow: 2px 3px 6px red, 4px 6px 6px #00b0ff;
-    font-size: 20px;
+    font-size: 40px;
+    color: gold;
 }
 
 a:hover {
-    color: #0086FF;
+    color: orange;
 }
 
 h1 {
@@ -37,9 +41,31 @@ h4 {
 
 .footer {
     text-align: center;
-    font-size: 20px;
-    color: white;
+    font-size: 40px;
+    color: gold;
     text-shadow: 2px 3px 6px red, 4px 6px 6px #00b0ff;
     margin-top: 30px;
     clear: both;
+}
+
+#calc {
+    width: 650px;
+    float: left;
+    height: 250px;
+}
+
+#number {
+    float: left;
+    width: 500px;
+    height: 250px;
+}
+
+#currency {
+    width: 650px;
+    float: left;
+}
+
+#units {
+    width: 500px;
+    float: left;
 }
